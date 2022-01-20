@@ -1,0 +1,43 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Items | Inventory Tracking System
+
+    body
+        #filter-form
+        label.filter-labels(for="filter-name") Name (contains): 
+        input.filter-form-inputs(type="text" id="filter-name")
+        br
+        label.filter-labels Cost between 
+        input.filter-form-inputs(type="number" id="filter-mincost" min="0" max="9999")
+        label.filter-labels  - 
+        input.filter-form-inputs(type="number" id="filter-maxcost" min="0" max="9999")
+        br
+        label.filter-labels Quantity between 
+        input.filter-form-inputs(type="number" id="filter-minquantity" min="0" max="9999")
+        label.filter-labels  - 
+        input.filter-form-inputs(type="number" id="filter-maxquantity" min="0" max="9999")
+        br
+        input(type="button" id="filter-search" value="Search" onclick="searchItems()")
+        br
+        br
+
+        #list
+        br
+        #new-item-title New Item
+        form#new-item-form
+            label.labels(for="name") Name:
+            input.add-form-inputs(type="text" id="name" name="name")
+            br
+            label.labels(for="description") Description:
+            input.add-form-inputs(type="text" id="description" name="description")
+            br
+            label.labels(for="unit_cost") Unit Cost:
+            input.add-form-inputs(type="text" id="unit_cost" name="unit cost")
+            br
+            label.labels(for="quantity") Quantity:
+            input.add-form-inputs(type="text" id="quantity" name="quantity")
+            br
+            input(type="button" id="button" value="Submit" onclick="addItem()")
+
+        script(src=`/js/items.js`)

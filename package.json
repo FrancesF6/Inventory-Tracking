@@ -1,0 +1,28 @@
+{
+  "name": "inventory-tracking",
+  "version": "1.0.0",
+  "description": "Author: Frances F",
+  "main": "server.js",
+  "scripts": {
+    "dbinit": "node dbinitializer.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Frances Fang",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancesF6/Inventory-Tracking.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FrancesF6/Inventory-Tracking/issues"
+  },
+  "homepage": "https://github.com/FrancesF6/Inventory-Tracking#readme"
+}
